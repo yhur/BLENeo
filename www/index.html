@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name = "format-detection" content = "telephone=no"/>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1,
+         user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>BLE NeoPixel</title>
+    </head>
+    <body>
+        <div id="connectionScreen">
+            <h1>BLE NeoPixel</h1>
+            <ul id="deviceList">
+            </ul>
+            <button id="refreshButton">Refresh</button>
+        </div>
+
+        <div id="colorScreen">
+            <p>Use sliders to set color.</p>
+            Red
+            <input type="range" min="0" max="255" value="0" id="red"/>
+            Green
+            <input type="range" min="0" max="255" value="0" id="green"/>
+            Blue
+            <input type="range" min="0" max="255" value="0" id="blue"/>
+            Brightness
+            <input type="range" min="0" max="255" value="0" id="brightness" />
+            <div>
+              <label>
+                <input type="checkbox" class="switch" id="powerSwitch" />Power
+              </label>
+            </div>
+
+            <div id="rgbText">
+                &nbsp;
+            </div>
+            <div id="previewColor">
+            </div>
+
+            <button id="disconnectButton">Disconnect</button>
+        </div>
+        <div id="messageDiv"></div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+
